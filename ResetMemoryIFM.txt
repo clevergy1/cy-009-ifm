@@ -1,0 +1,37 @@
+We are quite often confronted with this "not enough memory" message. And most times it is still enough memory  on the device.
+
+We know this problem and will offer a service release in the next few weeks. 
+
+
+Meanwhile you can erase the PLC memory by executing a Linux command.
+
+To do so please open a telnet session. You can do that with  telnet  or with the software called "putty".
+
+telnet 192.168.10.1 
+
+where 192.168.10.1 is the IP-address of my AC14.
+
+Login: root
+Password: ecoxx41ca
+
+Type in this command:
+
+rm  -rf  /media/user0/C*
+
+(!! user0 <- that's a "zero")
+
+This command deletes all CODESYS related files and also resets the PLC memory.  
+
+After this command is finished you can type in:
+
+reboot
+
+and the AC14 is doing a system reboot.
+
+After this system reboot you can again download the software without getting this "out of memory message".
+
+
+
+Best regards,
+
+i. A. Peter Jansen
