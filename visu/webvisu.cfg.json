@@ -1,0 +1,14 @@
+
+{
+	"UpdateRate": 200,
+	"PlcAddress": "0001.9000.2DDC.C0A8.6402",
+	"UseLocalHost": true,
+	"Application": "Application",
+	"StartVisu": "PLC_VISU",
+	"BestFit": false,
+	"LogLevel": "INFO",
+	"CommBufferSize": 50000,
+    "HasKeyboard": false,
+    "TouchHandlingActive": false,
+    "ScaleTypeIsotropic": false
+}
